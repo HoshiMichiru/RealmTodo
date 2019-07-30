@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  inputViewController.swift
 //  RealmTodo
 //
 //  Created by 星みちる on 2019/07/30.
@@ -8,13 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class inputViewController: UIViewController {
+    @IBOutlet weak var textView: UITextField!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        
     }
+    @IBAction func inputButton(_ sender: UIButton) {
+    }
+    
 
 
 }
-

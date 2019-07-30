@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		CFD1FA2822EFEB7800468491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD1FA2622EFEB7800468491 /* Main.storyboard */; };
 		CFD1FA2A22EFEB7900468491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD1FA2922EFEB7900468491 /* Assets.xcassets */; };
 		CFD1FA2D22EFEB7900468491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD1FA2B22EFEB7900468491 /* LaunchScreen.storyboard */; };
+		CFD1FA3522EFF08A00468491 /* inputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1FA3422EFF08A00468491 /* inputViewController.swift */; };
+		CFD1FA3722EFF0DF00468491 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1FA3622EFF0DF00468491 /* Todo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		CFD1FA2922EFEB7900468491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFD1FA2C22EFEB7900468491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFD1FA2E22EFEB7900468491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFD1FA3422EFF08A00468491 /* inputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputViewController.swift; sourceTree = "<group>"; };
+		CFD1FA3622EFF0DF00468491 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +50,6 @@
 				0FBFEFD989D909D45980010D /* Pods-RealmTodo.debug.xcconfig */,
 				0CE9BF1E2B07739411C0D978 /* Pods-RealmTodo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,14 +82,32 @@
 		CFD1FA2122EFEB7800468491 /* RealmTodo */ = {
 			isa = PBXGroup;
 			children = (
+				CFD1FA3922EFF17B00468491 /* objects */,
+				CFD1FA3822EFF14000468491 /* Controllers */,
 				CFD1FA2222EFEB7800468491 /* AppDelegate.swift */,
-				CFD1FA2422EFEB7800468491 /* ViewController.swift */,
 				CFD1FA2622EFEB7800468491 /* Main.storyboard */,
 				CFD1FA2922EFEB7900468491 /* Assets.xcassets */,
 				CFD1FA2B22EFEB7900468491 /* LaunchScreen.storyboard */,
 				CFD1FA2E22EFEB7900468491 /* Info.plist */,
 			);
 			path = RealmTodo;
+			sourceTree = "<group>";
+		};
+		CFD1FA3822EFF14000468491 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFD1FA2422EFEB7800468491 /* ViewController.swift */,
+				CFD1FA3422EFF08A00468491 /* inputViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CFD1FA3922EFF17B00468491 /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				CFD1FA3622EFF0DF00468491 /* Todo.swift */,
+			);
+			path = objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +227,8 @@
 			files = (
 				CFD1FA2522EFEB7800468491 /* ViewController.swift in Sources */,
 				CFD1FA2322EFEB7800468491 /* AppDelegate.swift in Sources */,
+				CFD1FA3522EFF08A00468491 /* inputViewController.swift in Sources */,
+				CFD1FA3722EFF0DF00468491 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
