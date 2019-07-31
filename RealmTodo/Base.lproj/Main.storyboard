@@ -44,10 +44,10 @@
                                 <rect key="frame" x="302" y="7" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="新規追加"/>
+                                <connections>
+                                    <action selector="addButtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g3t-qc-KSo"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <action selector="addButton:" destination="BYZ-38-t0r" id="MhN-UN-cFN"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -87,7 +87,7 @@
                         <viewLayoutGuide key="safeArea" id="TLr-Fj-SOr"/>
                     </view>
                     <connections>
-                        <outlet property="textView" destination="Qbt-TF-UQy" id="a2J-yv-UNG"/>
+                        <outlet property="textField" destination="Qbt-TF-UQy" id="a2J-yv-UNG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JAu-Cu-NDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
