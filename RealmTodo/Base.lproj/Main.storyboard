@@ -77,7 +77,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lom-ml-BtW">
                                 <rect key="frame" x="170" y="342" width="74" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="登録"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="inputButton:" destination="gnG-4u-7Nr" eventType="touchUpInside" id="c8I-kq-Aec"/>
                                 </connections>
@@ -87,6 +87,7 @@
                         <viewLayoutGuide key="safeArea" id="TLr-Fj-SOr"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="lom-ml-BtW" id="URd-xL-W9D"/>
                         <outlet property="textField" destination="Qbt-TF-UQy" id="a2J-yv-UNG"/>
                     </connections>
                 </viewController>

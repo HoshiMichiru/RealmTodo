@@ -13,6 +13,9 @@ import RealmSwift
 class inputViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     
+    
+    @IBOutlet weak var button: UIButton!
+    
     //前の画面から渡されてきたTODOを受け取る変数
     var todo:Todo? = nil
     
@@ -22,6 +25,16 @@ class inputViewController: UIViewController {
         super.viewDidLoad()
 
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        if todo == nil{
+            //新規追加の場合
+        button.setTitle("追加", for: .normal)
+        }else{
+            //編集の場合
+            button.setTitle("更新", for: .normal)
+            textField.text = todo?.title
+        }
     }
     
     fileprivate func createNewTodo(_ text: String) {
@@ -41,6 +54,15 @@ class inputViewController: UIViewController {
         }
     }
     
+    fileprivate func updateTodo(_ text: String) {
+        //更新,まずれるむに接続
+        let realm = try!Realm()
+        
+        try!realm.write{
+            todo?.title = text
+        }
+    }
+    
     @IBAction func inputButton(_ sender: UIButton) {
         //nilかチェックする
 //        if textField.text == ""{でもから文字チェックになる
@@ -52,9 +74,16 @@ class inputViewController: UIViewController {
         }
         
         if text.isEmpty{
-//            textField.textkがから文字の場合
+//            textField.textがから文字の場合
 //            ボタンがクリックされた時の処理を中断
             return
+        }
+        
+        if todo == nil {
+            //新規タスクを追加
+            createNewTodo(text)
+        }else{
+            updateTodo(text)
         }
         
         //新規タスクを追加

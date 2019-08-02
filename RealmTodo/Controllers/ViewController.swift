@@ -34,7 +34,6 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         getRealm()
     }
-
     @IBAction func addButtn(_ sender: UIButton) {
     performSegue(withIdentifier: "toNext", sender: nil)
         
